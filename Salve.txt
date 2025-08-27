@@ -1,0 +1,76 @@
+	for horas := 0; horas <= 10; horas++ {
+		if horas == 5 {
+			continue
+		} else {
+			if horas == 8 {
+				break
+			}
+		}
+		fmt.Println(horas)
+	}
+
+	fmt.Println("Sai do laço")
+
+
+
+    	x := 0
+
+	switch {
+	case x > 5:
+		fmt.Println("Menor")
+	case x == 5:
+		fmt.Println("Igual")
+	case x < 5:
+		fmt.Println("Maior")
+	}
+
+    
+	switch x.(type) {
+	case int:
+		fmt.Println("int")
+	case bool:
+		fmt.Println("bool")
+	case string:
+		fmt.Println("string")
+	case float64:
+		fmt.Println("float")
+	default:
+		fmt.Println("sei la")
+	}
+
+
+	x := 1992
+	for x <= 2025 {
+		fmt.Println(x)
+		x++
+	}
+    
+
+    	i := 10
+	for i <= 100 {
+		resto := i % 4
+		if resto != 0 {
+			fmt.Println("O resto de", i, " dividido por 4 é", resto)
+		}
+
+		i++
+
+	}
+
+
+
+	// lista
+
+		slice := []string{"BANANA", "MAÇA", "JACA", ""}
+
+	for indice, valor := range slice {
+		fmt.Println("No indice", indice, " temos o valor:", valor)
+
+	}
+	slice = append(slice, "COCO")
+
+
+	for indice, valor := range slice {
+		fmt.Println("No indice", indice, " temos o valor:", valor)
+
+	}
